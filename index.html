@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV Innovation Project</title>
+
+    <!-- Import Google Font (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon dari FontAwesome (untuk gambar pesawat, baterai, wifi) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Terhubung ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Library Chart.js (untuk membuat grafik) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+     <!-- Navigasi Bar -->
+    <nav class="navbar">
+        <a href="#about">Tentang</a>
+        <a href="#features">Fitur</a>
+        <a href="#telemetry">Data</a>
+    </nav>
+
+    <!-- Header / Hero (Judul) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Project Sentinel-X</h1>
+            <p>Drone Otonom untuk Pemantauan Lahan Pertanian.</p>
+            <!-- Tombol ini nanti akan kita beri fungsi di JavaScript -->
+            <button onclick="scrollToSection('features')">Lihat Inovasi</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Fitur Unggulan -->
+        <section id="features" class="main-container">
+            <h2 class="title">Fitur Unggulan</h2>
+            <div class="grid">
+                <!-- Kartu 1 -->
+                <div class="card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>AI Processing</h3>
+                    <p>Deteksi hama secara real-time.</p>
+                </div>
+                <!-- Kartu 2 -->
+                <div class="card">
+                    <i class="fa-solid fa-battery-full"></i>
+                    <h3>Long Endurance</h3>
+                    <p>Terbang hingga 45 menit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Dashboard Data (Penting!) -->
+        <section id="telemetry" class="main-container">
+            <h2 class="title">Dashboard Live Data</h2>
+            <div class="dashboard">
+                <!-- Kotak 1: Cuaca (Data dari API) -->
+                <div class="box">
+                    <h3>Kondisi Terbang</h3>
+                    <!-- ID 'weather-data' ini akan diisi otomatis oleh JavaScript -->
+                    <div id="weather-data">
+                        <p>Mengambil data...</p>
+                    </div>
+                </div>
+
+                <!-- Kotak 2: Grafik Baterai (Simulasi) -->
+                <div class="box">
+                    <h3>Efisiensi Baterai</h3>
+                    <!-- Canvas ini adalah tempat Chart.js menggambar grafik -->
+                    <canvas id="batteryChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created for UAV Programming Class</p>
+    </footer>
+
+    <!-- PENTING: Sambungkan ke file logika kita -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

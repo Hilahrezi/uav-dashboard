@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Warna abu-abu muda lembut */
+    color: #333;
+}
+
+/* Navbar: Menu di tengah */
+.navbar {
+    background-color: #1a1a2e; /* Biru gelap */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar menu */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero: Gambar Latar */
+.hero {
+    /* Mengambil gambar dari internet */
+    background-image: url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+    /* Supaya teks di tengah */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: #00d4ff; /* Biru cerah */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Container Utama */
+.main-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+/* Mengatur Grid Kartu */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Supaya turun ke bawah kalau layar sempit */
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+.card i {
+    font-size: 40px;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+/* Layout Dashboard */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex: 1; /* Supaya lebar kotak fleksibel */
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
